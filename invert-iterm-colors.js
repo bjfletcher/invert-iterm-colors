@@ -1,6 +1,9 @@
 /*
 
-Transform (invert) <real>0.25</real> to <real>0.75</real> (the inverse) with this file:
+Transform all instances of <real>0.25</real> to <real>0.75</real> (the inverse), darkening them by 20% and leaving the background color alone.
+
+Example iTerm colors file:
+
 https://gist.github.com/luan/6362811
 
 the beginning of which looks like:
@@ -21,7 +24,7 @@ the beginning of which looks like:
 
 How to use?
 
-$ cat examples/Hybrid.itermcolors | node invert-itermcolors.js > examples/Hybrid-light.itermcolors
+$ cat examples/Hybrid.itermcolors | node invert-iterm-colors.js > examples/Hybrid-light.itermcolors
 
 */
 var Transform = require('stream').Transform;
